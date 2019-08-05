@@ -1,0 +1,12 @@
+@import url("./font_sarabun.css");
+* {
+  font-family: "Sarabun", Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.body_login {
+  background-color: #4451ff;
+  background-image: url("../images/bg_login.jpg");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
