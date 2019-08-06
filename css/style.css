@@ -97,7 +97,7 @@ label.btn input[type="checkbox"]:checked + label:before {
   backface-visibility: hidden;
   transform-origin: 100% 100%;
 }
-.form-check-input[type="checkbox"]:checked + label{
+.form-check-input[type="checkbox"]:checked + label {
   color: #751dfb;
 }
 
@@ -114,28 +114,73 @@ label.btn input[type="checkbox"]:checked + label:before {
   color: #751dfb;
 }
 
-.btn-login{
+.btn-login {
   background-color: #751dfb;
   border-radius: 4px;
   font-size: 1rem;
   font-weight: 400;
   color: #ffffff;
 }
-.btn-login:hover{
+.btn-login:hover {
   background-color: #954eff;
   color: #ffffff;
 }
-.btn-register{
+.btn-register {
   background-color: #29e0c2;
   border-radius: 4px;
   font-size: 1rem;
   font-weight: 400;
   color: #ffffff;
 }
-.btn-register:hover{
+.btn-register:hover {
   background-color: #29e0c2;
   color: #333333;
 }
-.card-body-login{
+.card-body-login {
   padding: 3rem;
+}
+
+header {
+  background-image: url("../images/bg_login.jpg");
+}
+.btn-select-game {
+  background-color: #3ccb4f;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
+  box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
+}
+.card.card-game:hover {
+  background-color: #cdf0d2;
+}
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (max-width: 1199px) {
+}
+@media (min-width: 1200px) {
+  header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  nav.navbar.navbar-huayza .navbar-nav .nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  nav.navbar.navbar-huayza .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
