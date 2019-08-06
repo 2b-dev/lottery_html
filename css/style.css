@@ -157,6 +157,9 @@ header {
 .card.card-game:hover {
   background-color: #cdf0d2;
 }
+.text-game-title {
+  color: #5642fb;
+}
 @media (max-width: 575px) {
 }
 
