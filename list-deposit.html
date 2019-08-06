@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HUAYZA</title>
+</head>
+
+<body>
+    <header>
+        <div class="d-none d-lg-block">
+            <h1 class="text-center white-text">HUAYZA</h1>
+        </div>
+        <nav class="navbar navbar-huayza navbar-expand-lg navbar-dark shadow-none">
+            <a class="navbar-brand d-lg-none" href="game.html">HUAYZA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">แจ้ง ฝาก/ถอน</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">แจ้งฝาก</a>
+                            <a class="dropdown-item" href="#">แจ้งถอน</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">ดูรายการ ฝาก/ถอน</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">ดูรายการฝาก</a>
+                            <a class="dropdown-item" href="#">ดูรายการถอน</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">เลือกเกม</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">เกม 1</a>
+                            <a class="dropdown-item" href="#">เกม 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">จัดการเกม</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">จัดการเกม 1</a>
+                            <a class="dropdown-item" href="#">จัดการเกม 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">จัดการข้อมูล</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">จัดการเกมข้อมูลส่วนตัว</a>
+                            <a class="dropdown-item" href="#">เปลี่ยนรหัสผ่าน</a>
+                            <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main class="py-5">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <h1 class="text-game-title">รายการฝาก</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-huayza-transfer table-bordered table-hover">
+                            <thead class="bg-4068ec white-text">
+                                <tr>
+                                    <th class="text-center" scope="col">ลูกค้า</th>
+                                    <th class="text-center" scope="col">การแจ้ง</th>
+                                    <th class="text-center" scope="col">สถานะ</th>
+                                    <th class="text-center" scope="col">จำนวนเงิน(บาท)</th>
+                                    <th class="text-center" scope="col">วันที่ทำรายการ</th>
+                                    <th class="text-center" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Member 1</td>
+                                    <td class="text-center">deposit</td>
+                                    <td class="text-center"><span class="status-money approve">Approve</span></td>
+                                    <td class="text-center">9000</td>
+                                    <td class="text-center">25 Jul 2019 18:21:29</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-option-table dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">ตัวเลือก</button>
+
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">1</a>
+                                            <a class="dropdown-item" href="#">2</a>
+                                            <a class="dropdown-item" href="#">3</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Member 1</td>
+                                    <td class="text-center">deposit</td>
+                                    <td class="text-center"><span class="status-money cancel">Cancel</span></td>
+                                    <td class="text-center">9000</td>
+                                    <td class="text-center">25 Jul 2019 18:21:29</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-option-table dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">ตัวเลือก</button>
+
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">1</a>
+                                            <a class="dropdown-item" href="#">2</a>
+                                            <a class="dropdown-item" href="#">3</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Member 1</td>
+                                    <td class="text-center">deposit</td>
+                                    <td class="text-center"><span class="status-money pendding">Pendding</span></td>
+                                    <td class="text-center">9000</td>
+                                    <td class="text-center">25 Jul 2019 18:21:29</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-option-table dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">ตัวเลือก</button>
+
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">1</a>
+                                            <a class="dropdown-item" href="#">2</a>
+                                            <a class="dropdown-item" href="#">3</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="./node_modules/mdbootstrap/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./node_modules/mdbootstrap/js/popper.min.js"></script>
+<script type="text/javascript" src="./node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
+<script type="text/javascript" src="./js/core.js"></script>
+
+</html>

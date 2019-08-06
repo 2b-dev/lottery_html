@@ -143,6 +143,11 @@ label.btn input[type="checkbox"]:checked + label:before {
 header {
   background-image: url("../images/bg_login.jpg");
 }
+.table.table.table-huayza-transfer td{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  vertical-align: middle;
+}
 .btn-select-game {
   background-color: #3ccb4f;
   font-size: 16px;
@@ -154,11 +159,41 @@ header {
   -moz-box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
   box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
 }
+.btn-option-table {
+  background-color: #ffb83b;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(220, 155, 25, 1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(220, 155, 25, 1);
+  box-shadow: 0px 3px 0px 0px rgba(220, 155, 25, 1);
+}
 .card.card-game:hover {
   background-color: #cdf0d2;
 }
 .text-game-title {
   color: #5642fb;
+}
+.bg-4068ec {
+  background-color: #4068ec;
+}
+.status-money {
+  padding: 0.15rem 0.5rem;
+  text-align: center;
+}
+.status-money.approve {
+  background-color: #58ef00;
+  color: #000000;
+}
+.status-money.cancel {
+  background-color: #fe2c49;
+  color: #ffffff;
+}
+.status-money.pendding {
+  background-color: #ffff00;
+  color: #000000;
 }
 @media (max-width: 575px) {
 }
