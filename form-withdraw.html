@@ -76,28 +76,35 @@
         <div class="container">
             <div class="row mb-3">
                 <div class="col-12 text-center">
-                    <h1 class="text-game-title">แจ้งฝาก</h1>
+                    <h1 class="text-game-title">แจ้งถอน</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 mb-3">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-6 col-lg-6 mb-3">
-                            <img id="img-file" src="./images/img_placholder.jpg" class="img-fluid img-placeholder">
-                        </div>
-                        <div class="col-12 mb-3">
-                            แนบรูป Slip : 
-                            <input id="input-file" type="file">
-                        </div>
-                        <div class="col-12 mb-3">
-                            <p class="mb-0">จำนวนเงินที่ฝาก:</p>
-                            <input class="form-control" type="text">
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table table-huayza-transfer table-bordered table-hover">
+                            <thead class="bg-4068ec white-text">
+                                <tr>
+                                    <th class="text-center" scope="col">ลูกค้า</th>
+                                    <th class="text-center" scope="col">จำนวนเงินที่ถอนได้</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td  class="text-center" scope="row">Member 1</td>
+                                    <td class="text-center">12000</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <p class="mb-0">จำนวนเงินที่ถอน:</p>
+                    <input class="form-control" type="text">
                 </div>
                 <div class="col-12">
                     <button class="btn btn-select-game btn-block mx-0">
-                        แจ้งฝาก
+                        แจ้งถอน
                     </button>
                 </div>
             </div>
