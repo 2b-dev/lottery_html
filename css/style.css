@@ -195,6 +195,16 @@ header {
   background-color: #ffff00;
   color: #000000;
 }
+.img-placeholder{
+  border: 1px solid #666666;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.btn-choosefile{
+  background-color: #ebebeb;
+  padding: 0.35rem 1rem;
+  border: 1px solid #8a8a8a;
+}
 @media (max-width: 575px) {
 }
 
