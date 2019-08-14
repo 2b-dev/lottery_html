@@ -80,6 +80,508 @@
                         <div class="card-body">
                             <h2 class="text-game-title">หวยรัฐบาล 1 สิงหาคม 2562</h2>
                             <h5 class="close-text-title">ปิดรับ 01/08/2562 เวลา 15:30 น.</h5>
+                            <button class="btn btn-select-game btn-rule">
+                                คลิกเพื่ออ่านกติกา
+                            </button>
+                            <p class="sub-text-rule text-center c-757575">อ่านกติการก่อนเล่น</p>
+
+                            <div class="row">
+                                <div class="col-12 px-md-5">
+                                    <h5 class="text-left font-weight-bold">เลือกการแทง</h5>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div class="tabs-select">
+                                        <label class="tab-btn">
+                                            <input type="radio" name="tab-input" class="tab-input">
+                                            <div class="tab-box">สามตัวบน + โต๊ด</div>
+                                        </label>
+                                        <label class="tab-btn">
+                                            <input type="radio" name="tab-input" class="tab-input">
+                                            <div class="tab-box">สามตัวหน้า + ล่าง</div>
+                                        </label>
+                                        <label class="tab-btn">
+                                            <input type="radio" name="tab-input" class="tab-input">
+                                            <div class="tab-box">สองตัวบน + ล่าง</div>
+                                        </label>
+                                        <label class="tab-btn">
+                                            <input type="radio" name="tab-input" class="tab-input">
+                                            <div class="tab-box">เลขวิ่ง</div>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="col-12 px-md-5">
+                                    <h5 class="text-left font-weight-bold">เลือกเงื่อนไข</h5>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div class="tabs-select">
+                                        <label class="tab-btn">
+                                            <input type="checkbox" name="tab-input" class="tab-input">
+                                            <div class="tab-box">สามตัวบน</div>
+                                        </label>
+                                        <label class="tab-btn">
+                                            <input type="checkbox" name="tab-input" class="tab-input">
+                                            <div class="tab-box">สามตัวโต๊ะ</div>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="col-12 px-md-5">
+                                    <h5 class="text-left font-weight-bold">หมวดเลข</h5>
+                                </div>
+                                <div class="col-12 px-md-5">
+                                    <div id="numcat" class="nav-catnum-block">
+                                        <ul class="nav nav-tabs nav-tabs-cat-num" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="XX0-tab" data-toggle="tab" href="#XX0"
+                                                    role="tab" aria-controls="XX0" aria-selected="true">0XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX1-tab" data-toggle="tab" href="#XX1"
+                                                    role="tab" aria-controls="XX1" aria-selected="false">1XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX2-tab" data-toggle="tab" href="#XX2"
+                                                    role="tab" aria-controls="XX2" aria-selected="false">2XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX3-tab" data-toggle="tab" href="#XX3"
+                                                    role="tab" aria-controls="XX3" aria-selected="false">3XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX4-tab" data-toggle="tab" href="#XX4"
+                                                    role="tab" aria-controls="XX4" aria-selected="false">4XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX5-tab" data-toggle="tab" href="#XX5"
+                                                    role="tab" aria-controls="XX5" aria-selected="false">5XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX6-tab" data-toggle="tab" href="#XX6"
+                                                    role="tab" aria-controls="XX6" aria-selected="false">6XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX7-tab" data-toggle="tab" href="#XX7"
+                                                    role="tab" aria-controls="XX7" aria-selected="false">7XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX8-tab" data-toggle="tab" href="#XX8"
+                                                    role="tab" aria-controls="XX8" aria-selected="false">8XX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="XX9-tab" data-toggle="tab" href="#XX9"
+                                                    role="tab" aria-controls="XX9" aria-selected="false">9XX</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-content tab-content-num" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="XX0" role="tabpanel"
+                                            aria-labelledby="XX0-tab">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="num-select">
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">000</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">001</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">002</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">003</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">004</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">005</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">006</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">007</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">008</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">009</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">010</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">011</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">012</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">013</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">014</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">015</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">016</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">017</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">018</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">019</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">020</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">021</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">022</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">023</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">024</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">025</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">026</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">027</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">028</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">029</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">030</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">041</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">042</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">043</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">044</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">045</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">046</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">047</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">048</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">049</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">050</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">051</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">052</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">053</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">054</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">055</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">056</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">057</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">058</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">059</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">060</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">061</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">062</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">063</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">064</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">065</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">066</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">067</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">068</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">069</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">070</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">071</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">072</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">073</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">074</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">075</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">076</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">077</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">078</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">079</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">080</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">081</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">082</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">083</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">084</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">085</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">086</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">087</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">088</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">089</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">090</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">091</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">092</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">093</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">094</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">095</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">096</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">097</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">098</div>
+                                                        </label>
+                                                        <label class="num-btn">
+                                                            <input type="checkbox" name="num-input" class="num-input">
+                                                            <div class="num-box">099</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="XX1" role="tabpanel" aria-labelledby="XX1-tab">
+                                            1XX</div>
+                                        <div class="tab-pane fade" id="XX2" role="tabpanel" aria-labelledby="XX2-tab">
+                                            2XX
+                                        </div>
+                                        <div class="tab-pane fade" id="XX3" role="tabpanel" aria-labelledby="XX3-tab">
+                                            3XX
+                                        </div>
+                                        <div class="tab-pane fade" id="XX4" role="tabpanel" aria-labelledby="XX4-tab">
+                                            4XX
+                                        </div>
+                                        <div class="tab-pane fade" id="XX5" role="tabpanel" aria-labelledby="XX5-tab">
+                                            5XX
+                                        </div>
+                                        <div class="tab-pane fade" id="XX6" role="tabpanel" aria-labelledby="XX6-tab">
+                                            6XX
+                                        </div>
+                                        <div class="tab-pane fade" id="XX7" role="tabpanel" aria-labelledby="XX7-tab">
+                                            7XX
+                                        </div>
+                                        <div class="tab-pane fade" id="XX8" role="tabpanel" aria-labelledby="XX8-tab">
+                                            8XX
+                                        </div>
+                                        <div class="tab-pane fade" id="XX9" role="tabpanel" aria-labelledby="XX9-tab">
+                                            9XX
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="col-12 px-md-5 text-left">
+                                    <h5 class="text-left font-weight-bold text-underlind">เงื่อนไขการแทง</h5>
+                                    <p class="font-weight-bold mb-1">สามตัวโต๊ด</p>
+                                    <p class="mb-1">แทงขั้นต่ำต่อครั้ง : 1</p>
+                                    <p class="mb-1">แทงสูงสุดต่อครั้ง : 500</p>
+                                    <p class="mb-1">แทงสูงสุดต่อเลข : 2,000 บาท</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,6 +594,28 @@
 <script type="text/javascript" src="./node_modules/mdbootstrap/js/popper.min.js"></script>
 <script type="text/javascript" src="./node_modules/mdbootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script type="text/javascript" src="./js/core.js"></script>
+<script>
+    Swal.fire({
+        title: 'คุณเลือกไปแล้ว',
+        text: "ต้องการยกเลิกการเลือกใช่หรือไม่",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#39b54a',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'ใช่, ยกเลิกการเลือก',
+        cancelButtonText: 'ปิด'
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title: 'ยกเลิก!',
+                text: 'ได้ทำการยกเลิกการเลือกหมายเลขแล้ว',
+                type: 'success',
+                confirmButtonText: 'ปิด',
+            })
+        }
+    })
+</script>
 
 </html>

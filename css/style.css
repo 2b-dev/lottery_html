@@ -3,7 +3,9 @@
   font-family: "Sarabun", Tahoma, sans-serif;
   font-size: 16px;
 }
-
+.c-757575 {
+  color: #757575;
+}
 .body_login {
   background-color: #4451ff;
   background-image: url("../images/bg_login.jpg");
@@ -143,7 +145,7 @@ label.btn input[type="checkbox"]:checked + label:before {
 header {
   background-image: url("../images/bg_login.jpg");
 }
-.table.table.table-huayza-transfer td{
+.table.table.table-huayza-transfer td {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   vertical-align: middle;
@@ -158,6 +160,11 @@ header {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
   -moz-box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
   box-shadow: 0px 3px 0px 0px rgba(42, 130, 46, 1);
+}
+.btn-select-game.btn-rule {
+  font-size: 20px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .btn-option-table {
   background-color: #ffb83b;
@@ -175,6 +182,9 @@ header {
 }
 .text-game-title {
   color: #5642fb;
+}
+.close-text-title {
+  color: #e71f24;
 }
 .bg-4068ec {
   background-color: #4068ec;
@@ -195,23 +205,152 @@ header {
   background-color: #ffff00;
   color: #000000;
 }
-.img-placeholder{
+.img-placeholder {
   border: 1px solid #666666;
   border-radius: 0.25rem;
   cursor: pointer;
 }
-.btn-choosefile{
+.btn-choosefile {
   background-color: #ebebeb;
   padding: 0.35rem 1rem;
   border: 1px solid #8a8a8a;
+}
+.tabs-select {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tabs-select > .tab-btn {
+  margin: 0.25rem;
+}
+
+.tab-btn > .tab-input {
+  width: 0;
+  height: 0;
+  margin: 0;
+  display: none;
+}
+.tab-btn > .tab-box {
+  padding: 0.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  border: 2px solid #4068ec;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4068ec;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.tab-btn > .tab-input:checked + .tab-box {
+  background-color: #4068ec;
+  color: #ffffff;
+}
+
+.nav-tabs.nav-tabs-cat-num {
+  border-bottom: none;
+}
+.nav-tabs.nav-tabs-cat-num .nav-link {
+  background-color: #ffffff;
+  border: 2px solid #4068ec;
+  color: #4068ec;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin: 8px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.nav-tabs.nav-tabs-cat-num .nav-item.show .nav-link,
+.nav-tabs.nav-tabs-cat-num .nav-link.active {
+  background-color: #4068ec;
+  color: #ffffff;
+}
+
+.tab-content-num {
+  margin-top: 1.5rem;
+}
+
+.num-select {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.num-select > .num-btn {
+  margin: 0.25rem;
+}
+.text-underlind {
+  text-decoration: underline;
+}
+.num-btn > .num-input {
+  width: 0;
+  height: 0;
+  margin: 0;
+  display: none;
+}
+.num-btn > .num-box {
+  padding: 0.4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  border: 2px solid #4068ec;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4068ec;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.num-btn > .num-input:checked + .num-box {
+  background-color: #4068ec;
+  color: #ffffff;
+}
+.sticky-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 @media (max-width: 575px) {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
 }
-
+@media (max-width: 767px) {
+  .tabs-select > .tab-btn {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
+  .tabs-select > .tab-btn {
+    width: 40%;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-catnum-block {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .nav-tabs.nav-tabs-cat-num {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
